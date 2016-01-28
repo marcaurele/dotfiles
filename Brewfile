@@ -20,6 +20,7 @@ brew 'spark'
 brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
+brew 'zsh'
 
 cask 'atom'
 cask 'dropbox'
