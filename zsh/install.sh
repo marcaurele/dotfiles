@@ -5,5 +5,7 @@ if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
 fi
 unset CHECK_ZSH_INSTALLED
 
-# Change actual shell to zsh
-chsh -s /usr/local/bin/zsh
+# Change actual shell to zsh if needed
+if [ ! -n $ZSH_VERSION ]; then
+  chsh -s /usr/local/bin/zsh
+fi
