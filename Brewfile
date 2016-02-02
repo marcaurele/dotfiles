@@ -15,6 +15,7 @@ brew 'libgit2'
 brew 'openssl'
 brew 'node'
 brew 'readline', args: ['universal']
+brew 'oath-toolkit'
 brew 'p7zip'
 brew 'postgresql'
 brew 'sqlite', args: ['universal']
@@ -22,6 +23,8 @@ brew 'unrar'
 
 brew 'python'
 brew 'python3'
+brew 'pyenv-virtualenv'
+brew 'pyenv-virtualenvwrapper'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'spark'
