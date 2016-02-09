@@ -46,3 +46,52 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
+
+# exports colors to be used in other bash scripts
+# use by sourcing then
+# printf "${cc_red} text ${cc_NC}"
+
+cc_NC='\033[0m'
+
+# Regular Colors
+cc_black='\033[0;30m'            # Black
+cc_red='\033[0;31m'              # Red
+cc_green='\033[0;32m'            # Green
+cc_yellow='\033[0;33m'           # Yellow
+cc_blue='\033[0;34m'             # Blue
+cc_purple='\033[0;35m'           # Purple
+cc_cyan='\033[0;36m'             # Cyan
+cc_white='\033[0;37m'            # White
+
+# High Intensity
+cc_hh_black='\033[0;90m'         # Black
+cc_hh_red='\033[0;91m'           # Red
+cc_hh_green='\033[0;92m'         # Green
+cc_hh_yellow='\033[0;93m'        # Yellow
+cc_hh_blue='\033[0;94m'          # Blue
+cc_hh_purple='\033[0;95m'        # Purple
+cc_hh_cyan='\033[0;96m'          # Cyan
+cc_hh_white='\033[0;97m'         # White
+
+# BOLD Regular Colors
+cc_black_bold='\033[1;30m'       # Black
+cc_red_bold='\033[1;31m'         # Red
+cc_green_bold='\033[1;32m'       # Green
+cc_yellow_bold='\033[1;33m'      # Yellow
+cc_blue_bold='\033[1;34m'        # Blue
+cc_purple_bold='\033[1;35m'      # Purple
+cc_cyan_bold='\033[1;36m'        # Cyan
+cc_white_bold='\033[1;37m'       # White
+
+# BOLD High Intensity
+cc_hh_black_bold='\033[1;90m'    # Black
+cc_hh_red_bold='\033[1;91m'      # Red
+cc_hh_green_bold='\033[1;92m'    # Green
+cc_hh_yellow_bold='\033[1;93m'   # Yellow
+cc_hh_blue_bold='\033[1;94m'     # Blue
+cc_hh_purple_bold='\033[1;95m'   # Purple
+cc_hh_cyan_bold='\033[1;96m'     # Cyan
+cc_hh_white_bold='\033[1;97m'    # White
+
+#Replace any leading leading 0; with 1; for bold colors
+#Replace any leading 0; with 4; to underline
