@@ -9,6 +9,9 @@ then
   alias la='gls -A --color'
 fi
 
+# Fix chmod to D:755, F:644
+# http://superuser.com/a/91966/408765
+alias chmodfix='chmod -R u+rwX,go+rX,go-w'
 
 # To autoload virtualenv and add node modules bin to local path
 # Needs improvement on venv deactivation
