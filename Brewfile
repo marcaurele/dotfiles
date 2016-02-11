@@ -23,8 +23,8 @@ brew 'unrar'
 
 brew 'python'
 brew 'python3'
-brew 'pyenv-virtualenv'
-brew 'pyenv-virtualenvwrapper'
+#brew 'pyenv-virtualenv'
+#brew 'pyenv-virtualenvwrapper'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'spark'
@@ -48,6 +48,7 @@ cask 'sizeup'
 cask 'skype'
 cask 'sublime-text3'
 cask 'telegram'
+cask 'tunnelblick'
 cask 'vlc'
 cask 'virtualbox'
 
@@ -55,7 +56,6 @@ cask 'virtualbox'
 # Development tools #
 #####################
 
-brew 'cdrtools'
 brew 'docker'
 brew 'docker-machine'
 brew 'docker-compose'
@@ -67,3 +67,10 @@ brew 'geoip'
 
 cask 'dockertoolbox'
 cask 'eclipse-jee'
+
+####################
+# Cloudstack tools
+####################
+brew 'cdrtools'
+#brew 'tomcat6'
+brew 'maven'
