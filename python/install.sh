@@ -12,15 +12,38 @@ fi
 # Install pipsi
 if ! type "pipsi" > /dev/null; then
 	echo '> Installing pipsi'
-	curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3
+	sudo pip3 install pipsi
 else
-	echo '> Trying to update pipsi'
-	pipsi upgrade pipsi
+	echo '> Checking new version of pipsi'
+	sudo pip3 install --upgrade pipsi
 fi
 
-# Install commmons tool via pipsi
-# if ! type "pipsi" > /dev/null; then
-# 	pipsi install flake8
-# 	pipsi install cs
-# 	pipsi install bpython
-# fi
+# Tools via pipsi
+declare -a pipsi_tools=(
+	"cs"
+	"flake8"
+	"sphinx"
+	"tox"
+)
+for cmd in "${pipsi_tools[@]}"; do
+	if ! type "$cmd" > /dev/null 2>&1; then
+		pipsi install $cmd
+	else
+		pipsi upgrade $cmd
+	fi
+done
+
+# Custom install for sphinx libs
+declare -a sphinx_tools=(
+	"pyenchant"
+	"sphinxcontrib-spelling"
+)
+if [ -f $HOME/.local/venvs/sphinx/bin/pip ]; then
+	for tool in "${sphinx_tools[@]}"; do
+		if [ $($HOME/.local/venvs/sphinx/bin/pip freeze | grep $tool | wc -l) -eq 0 ]; then
+			$HOME/.local/venvs/sphinx/bin/pip install $tool
+		else
+			$HOME/.local/venvs/sphinx/bin/pip install --upgrade $tool
+		fi
+	done
+fi
