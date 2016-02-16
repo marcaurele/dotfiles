@@ -37,13 +37,13 @@ chflags nohidden ~/Library
 defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Mouse tracking speed (1...5)
-defaults write NSGlobalDomain com.apple.mouse.scaling -float 5
+defaults write NSGlobalDomain com.apple.mouse.scaling -float 3
 
 # Trackpad tracking speed (1...5)
-defaults write NSGlobalDomain com.apple.trackpad.scaling -int 5
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 4
 
 # Scrolling speed (1...5)
-defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 5
+defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 4
 
 # Enable full keyboard access for all controls (eg enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -115,7 +115,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
