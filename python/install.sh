@@ -10,6 +10,10 @@ else
 fi
 
 # Install pipsi
+#
+# Warning: pb with pipsi which does not use the correct base prefix
+# Need to look into it
+#
 if ! type "pipsi" > /dev/null; then
 	echo '> Installing pipsi'
 	sudo pip3 install pipsi
