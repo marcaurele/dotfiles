@@ -8,6 +8,7 @@ brew 'ack'
 brew 'coreutils'
 brew 'gdbm', args: ['universal']
 brew 'git'
+brew 'gpg2', args: ['with-readline']
 brew 'imagemagick'
 brew 'jenv'
 brew 'jp2a'
@@ -48,9 +49,10 @@ cask 'sizeup'
 cask 'skype'
 cask 'sublime-text3'
 cask 'telegram'
-cask 'tunnelblick'
+#cask 'tunnelblick' - buggy for now
 cask 'vlc'
 cask 'virtualbox'
+cask 'virtualbox-extension-pack'
 
 #####################
 # Development tools #
