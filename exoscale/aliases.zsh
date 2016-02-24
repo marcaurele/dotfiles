@@ -1,0 +1,1 @@
+alias findhost='ssh $EXOSCALE_BASTION findhost \$1\'
