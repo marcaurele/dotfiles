@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 tap 'caskroom/versions'
 
 brew 'ack'
+brew 'binutils'
 brew 'coreutils'
 brew 'gdbm', args: ['universal']
 brew 'git'
