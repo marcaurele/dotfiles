@@ -1,0 +1,6 @@
+alias csdev-go='cd $HOME/exoscale/cloudstack'
+alias csdev-build='mvn -P developer,kvm,exoscale,systemvm -Dsimulator -Dmaven.test.skip=true $1'
+alias csdev-deploydb='mvn -Pdeveloper -pl developer -Ddeploydb'
+alias csdev-deploysimulator='mvn -Pdeveloper -pl developer -Ddeploydb-simulator'
+alias csdev-startjetty='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl client jetty:run -Dsimulator'
+alias csdev-installdc='python tools/marvin/marvin/deployDataCenter.py -i setup/dev/advanced.cfg'
