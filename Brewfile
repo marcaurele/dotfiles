@@ -15,7 +15,7 @@ brew 'jenv'
 brew 'jp2a'
 brew 'libgit2'
 brew 'openssl'
-brew 'npm'
+brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
 brew 'oath-toolkit'
 brew 'p7zip'
@@ -68,6 +68,7 @@ brew 'homebrew/version/mysql56'
 brew 'cairo'
 brew 'pango'
 brew 'geoip'
+brew 'redis'
 
 cask 'dockertoolbox'
 cask 'eclipse-jee'
