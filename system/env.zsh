@@ -1,3 +1,4 @@
+# Make vim the default editor
 export EDITOR='vim'
 
 # Fix LC on OSX
@@ -10,3 +11,9 @@ export LC_ALL='en_CA.UTF-8'
 
 # For standard sorting in ls, ...
 export LC_COLLATE=C
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
+
+# Don’t clear the screen after quitting a manual page
+#export MANPAGER="less -X"
