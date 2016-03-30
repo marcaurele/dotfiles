@@ -19,7 +19,7 @@ brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
 brew 'oath-toolkit'
 brew 'p7zip'
-brew 'postgresql'
+brew 'postgresql', args: ['with-python']
 brew 'sqlite', args: ['universal']
 brew 'unrar'
 
@@ -71,11 +71,11 @@ brew 'geoip'
 brew 'redis'
 
 cask 'dockertoolbox'
-cask 'eclipse-jee'
+#cask 'eclipse-jee'
 
 ####################
 # Cloudstack tools
 ####################
-brew 'cdrtools'
+#brew 'cdrtools'
 #brew 'tomcat6'
 brew 'maven'
