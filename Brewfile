@@ -74,7 +74,7 @@ cask 'dockertoolbox'
 #cask 'eclipse-jee'
 
 ####################
-# Cloudstack tools
+# Cloudstack tools #
 ####################
 #brew 'cdrtools'
 #brew 'tomcat6'
