@@ -1,6 +1,12 @@
 export EDITOR='vim'
 
 # Fix LC on OSX
-export LANG='en_US.UTF-8'
-export LC_CTYPE='en_US.UTF-8'
-export LC_ALL='en_US.UTF-8'
+# Correctly set the locale
+# I'd rather have a en locale than a french one
+# and I don't like the US format, so CA is a good option
+export LANG='en_CA.UTF-8'
+export LC_CTYPE='en_CA.UTF-8'
+export LC_ALL='en_CA.UTF-8'
+
+# For standard sorting in ls, ...
+export LC_COLLATE=C
