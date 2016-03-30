@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Get your out to the world IP address
+dig +short myip.opendns.com @resolver1.opendns.com
