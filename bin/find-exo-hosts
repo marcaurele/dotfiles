@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd $HOME/exoscale/dns-zones
+awk '($NF == "generate-dns"){print $1}' *exoscale.net \
+    | grep -v '\..*\.' | sed 's/$/.p.exoscale.net/' \
+    | awk '{print $1}' \
+    | grep -i $1

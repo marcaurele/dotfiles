@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Update my local list of DNS for exoscale
+cat ~/.ssh/config_exo_bastion > ~/.ssh/config
+cd $HOME/exoscale/dns-zones
+git pull --rebase -q
+awk '($NF == "generate-dns"){print $1}' *exoscale.net \
+    | grep -v '\..*\.' | sed 's/$/.p.exoscale.net/' \
+    | awk '{print "Host "$1}' \
+    | sort >> ~/.ssh/config
