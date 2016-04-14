@@ -1,2 +1,2 @@
-alias findhost='ssh $EXOSCALE_BASTION findhost \$1\'
-alias cleanvmhosts='sed -i -E "/^159\.100/d" $HOME/.ssh/known_hosts'
+alias cleanvmhosts='sed -i "" -E "/^159\.100/d" $HOME/.ssh/known_hosts'
+alias devdockerdb='grep -rIl -E "mysql.*127\.0\.0\.1" * | xargs sed -i "" -E "s/127.0.0.1/192.168.99.100/g"'
