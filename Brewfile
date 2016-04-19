@@ -19,6 +19,7 @@ brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
 brew 'oath-toolkit'
 brew 'p7zip'
+brew 'pngcrush'
 brew 'postgresql', args: ['with-python']
 brew 'sqlite', args: ['universal']
 brew 'unrar'
@@ -52,7 +53,7 @@ cask 'sizeup'
 cask 'skype'
 cask 'sublime-text3'
 cask 'telegram'
-cask 'tunnelblick'
+#cask 'tunnelblick'
 cask 'vlc'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
