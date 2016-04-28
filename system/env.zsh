@@ -17,3 +17,6 @@ export GREP_OPTIONS="--color=auto"
 
 # Don’t clear the screen after quitting a manual page
 #export MANPAGER="less -X"
+
+# Sorry Brew, but that's not something I want
+export HOMEBREW_NO_ANALYTICS=1
