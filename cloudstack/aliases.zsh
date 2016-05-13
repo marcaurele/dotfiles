@@ -1,6 +1,6 @@
 alias csdev-go='cd $HOME/exoscale/cloudstack'
-alias csdev-build='mvn -P developer,kvm,exoscale,systemvm -Dsimulator -Dmaven.test.skip=true $1'
-alias csdev-buildwithtest='mvn -P developer,kvm,exoscale,systemvm -Dsimulator $1'
+alias csdev-build='mvn -P developer,kvm,exoscale -Dsimulator -Dmaven.test.skip=true $1'
+alias csdev-buildwithtest='mvn -P developer,kvm,exoscale -Dsimulator $1'
 alias csdev-deploydb='mvn -Pdeveloper -pl developer -Ddeploydb'
 alias csdev-deploysimulator='mvn -Pdeveloper -pl developer -Ddeploydb-simulator'
 alias csdev-startjetty='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl client jetty:run -Dsimulator'
