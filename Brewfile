@@ -69,6 +69,7 @@ brew 'docker-compose'
 # Must use MySQL 5.6 for cloudstack 4.4
 brew 'homebrew/version/mysql56'
 brew 'cairo'
+brew 'kafkacat'
 brew 'pango'
 brew 'geoip'
 brew 'redis'
