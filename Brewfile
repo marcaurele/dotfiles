@@ -21,6 +21,7 @@ brew 'oath-toolkit'
 brew 'p7zip'
 brew 'pngcrush'
 brew 'postgresql', args: ['with-python']
+brew 's3cmd'
 brew 'sqlite', args: ['universal']
 brew 'unrar'
 
