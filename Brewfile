@@ -62,24 +62,19 @@ cask 'virtualbox-extension-pack'
 # Development tools #
 #####################
 
+brew 'cairo'
 brew 'docker'
 brew 'docker-machine'
 brew 'docker-compose'
+brew 'geoip'
+brew 'gradle'
+brew 'kafkacat'
+brew 'maven'
 #brew 'mysql-connector-c'
 # Must use MySQL 5.6 for cloudstack 4.4
 brew 'homebrew/version/mysql56'
-brew 'cairo'
-brew 'kafkacat'
 brew 'pango'
-brew 'geoip'
 brew 'redis'
 
 cask 'dockertoolbox'
 #cask 'eclipse-jee'
-
-####################
-# Cloudstack tools #
-####################
-#brew 'cdrtools'
-#brew 'tomcat6'
-brew 'maven'
