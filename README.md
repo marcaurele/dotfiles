@@ -47,3 +47,11 @@ this script in `bin/`.
 
 - KeepassX 0.4.4
 - Truecrypt 7.1a
+
+
+## Manual things
+
+### Asciidoctor
+  - `sudo gem install asciidoctor`
+  - `sudo gem install --pre asciidoctor-pdf`
+  - `sudo gem install coderay pygments.rb`
