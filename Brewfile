@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 tap 'caskroom/versions'
 
 brew 'ack'
+brew 'asciidoc'
 brew 'binutils'
 brew 'coreutils'
 brew 'gdbm', args: ['universal']
@@ -23,6 +24,7 @@ brew 'pngcrush'
 brew 'postgresql', args: ['with-python']
 brew 's3cmd'
 brew 'sqlite', args: ['universal']
+brew 'tree'
 brew 'unrar'
 
 brew 'python'
@@ -51,6 +53,7 @@ cask 'pencil'
 cask 'seashore'
 cask 'sequel-pro'
 cask 'sizeup'
+cask 'sketchup'
 cask 'skype'
 cask 'sublime-text3'
 cask 'telegram'
@@ -58,6 +61,9 @@ cask 'telegram'
 cask 'vlc'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
+
+cask 'xquartz'
+cask 'inkscape'
 
 #####################
 # Development tools #
