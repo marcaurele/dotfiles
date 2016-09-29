@@ -9,3 +9,5 @@ update_node_modules() {
 }
 
 alias update_node_modules="update_node_modules"
+
+alias grunt="nocorrect grunt"
