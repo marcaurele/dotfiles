@@ -4,3 +4,6 @@ alias gitpushmarco='git push origin -f HEAD:user/marco'
 
 alias demo_api='echo $DEMO_API_KEY | pbcopy'
 alias demo_secret='echo $DEMO_SECRET_KEY | pbcopy'
+
+alias dev_update='pip install --upgrade pip && pip install -r requirements-dev.txt && npm install'
+
