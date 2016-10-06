@@ -8,3 +8,6 @@
 # Compiled files
 *.pyc
 *.class
+.venv/
+
+node_modules/
