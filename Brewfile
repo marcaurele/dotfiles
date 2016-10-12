@@ -37,7 +37,7 @@ brew 'python3'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'spark'
-brew 'wget'
+brew 'wget', args: ['with-debug']
 # brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completions'
