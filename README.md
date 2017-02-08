@@ -43,10 +43,19 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+To only install the brew packages inside `Brewfile`, run:
+
+```sh
+cd <this-directory>
+brew bundle
+```
+
+Warning: it won't show which packages have been updated!
+
 ## Missing stuff
 
 - KeepassX 0.4.4
-- Truecrypt 7.1a
+- Truecrypt 7.1a/VeraCrypt
 
 
 ## Manual things
