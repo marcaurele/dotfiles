@@ -19,6 +19,7 @@ brew 'jenv'
 brew 'jp2a'
 brew 'libgit2'
 brew 'libimobiledevice'
+brew 'libpng'
 brew 'openssl'
 brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
