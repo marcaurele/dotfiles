@@ -20,6 +20,8 @@ sudo nvram SystemAudioVolume=" "
 #defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
+# Disable saving FileVault password in RAM during standby
+sudo pmset -a destroyfvkeyonstandby 1
 
 # Disable press-and-hold for keys in favor of key repeat.
 #defaults write -g ApplePressAndHoldEnabled -bool false
