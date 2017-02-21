@@ -1,0 +1,53 @@
+# Sample gitconfig
+#
+
+[user]
+        name = Marc-Aurèle Brothier
+        email = m@brothier.org
+[github]
+        user = marcaurele
+        name = marcaurele
+
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+
+[credential]
+        helper = osxkeychain
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        promote = !$ZSH/bin/git-promote
+        wtf     = !$ZSH/bin/git-wtf
+        count   = !git shortlog -sn
+	please = push --force-with-lease
+	commend = commit --amend --no-edit
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+	excludesfile = /Users/marco/.gitignore
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        default = current
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[diff]
+	compactionHeuristic = true
