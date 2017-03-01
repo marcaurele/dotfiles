@@ -12,7 +12,7 @@ brew 'curl', args: ['with-openssl', 'with-libssh2']
 brew 'gdbm', args: ['universal']
 brew 'ghostscript', args: ['with-x11']
 brew 'git'
-brew 'gpg'
+#brew 'gpg'
 brew 'gpg2', args: ['with-readline']
 brew 'imagemagick', args: ['with-ghostscript']
 brew 'ipcalc'
@@ -26,6 +26,7 @@ brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
 brew 'oath-toolkit'
 brew 'p7zip'
+brew 'pinentry-mac'
 brew 'pngcrush'
 brew 'postgresql', args: ['with-python']
 brew 's3cmd'
