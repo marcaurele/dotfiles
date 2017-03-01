@@ -4,6 +4,7 @@
 [user]
         name = Marc-Aurèle Brothier
         email = m@brothier.org
+	signingkey = 887CC10F998EBC42
 [github]
         user = marcaurele
         name = marcaurele
@@ -53,3 +54,5 @@
 	trustExitCode = true
 [diff]
 	compactionHeuristic = true
+[commit]
+	gpgsign = true
