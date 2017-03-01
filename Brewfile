@@ -10,10 +10,11 @@ brew 'binutils'
 brew 'coreutils'
 brew 'curl', args: ['with-openssl', 'with-libssh2']
 brew 'gdbm', args: ['universal']
+brew 'ghostscript', args: ['with-x11']
 brew 'git'
 brew 'gpg'
 brew 'gpg2', args: ['with-readline']
-brew 'imagemagick'
+brew 'imagemagick', args: ['with-ghostscript']
 brew 'ipcalc'
 brew 'jenv'
 brew 'jp2a'
@@ -57,6 +58,7 @@ cask 'libreoffice'
 cask 'java6'
 cask 'java7'
 cask 'java'
+cask 'keybase'
 cask 'pencil'
 cask 'qlmarkdown'
 cask 'seashore'
