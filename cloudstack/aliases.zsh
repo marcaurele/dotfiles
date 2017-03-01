@@ -3,5 +3,5 @@ alias csdev-build='mvn -P kvm,exoscale,developer -Dsimulator -Dmaven.test.skip=t
 alias csdev-buildwithtest='mvn -P kvm,exoscale,systemvm,developer -Dsimulator $1'
 alias csdev-deploydb='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -Pdeveloper -pl developer -Ddeploydb'
 alias csdev-deploysimulator='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -Pdeveloper -pl developer -Ddeploydb-simulator'
-alias csdev-startjetty='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl client jetty:run -Dsimulator'
+alias csdev-startjetty='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl client jetty:run-exploded -Dsimulator'
 alias csdev-installdc='python tools/marvin/marvin/deployDataCenter.py -i setup/dev/advanced.cfg'
