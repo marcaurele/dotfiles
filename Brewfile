@@ -4,6 +4,9 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'caskroom/versions'
 
+# To install App from AppStore
+brew 'mas'
+
 brew 'ack'
 brew 'asciidoc'
 brew 'binutils'
@@ -76,6 +79,15 @@ cask 'virtualbox-extension-pack'
 
 cask 'xquartz'
 cask 'inkscape'
+
+mas 'Apple Configurator 2', id: 1037126344
+mas 'OTP Manager', id: 928941247
+mas 'MiniUsage', id: 416285394
+mas 'PDFScanner', id: 410968114
+mas 'TextWrangler', id: 404010395
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'WiFi Explorer', id: 494803304
+mas 'Money', id: 402410845
 
 #####################
 # Development tools #
