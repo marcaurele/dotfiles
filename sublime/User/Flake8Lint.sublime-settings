@@ -1,0 +1,5 @@
+{
+    // Turn off
+    "pydocstyle": false,
+    "python_interpreter": "/usr/local/bin/python3"
+}

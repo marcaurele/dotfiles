@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Packages/User/Monokai (Flake8Lint).tmTheme",
+	"draw_white_space": "all",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"rulers":
+	[
+		79
+	],
+	"show_encoding": true,
+	"translate_tabs_to_spaces": true
+}

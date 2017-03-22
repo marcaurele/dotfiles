@@ -1,0 +1,25 @@
+[
+    {"keys": ["super+shift+r"], "command": "reindent" , "args": {"single_line": false}},
+
+    // Layouts
+    { "keys": ["super+option+6"],
+      "caption": "2 rows",
+      "command": "set_layout",
+      "args":
+          { "cols": [0.0, 1.0],
+            "rows": [0.0, 0.8, 1.0],
+            "cells": [[0,0,1,1], [0,1,1,2]]
+          }
+    },
+
+    // Remapping of *some* SublimeREPL shortcuts
+    { "keys": ["ctrl+super+s"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+    { "keys": ["ctrl+shift+,", "s"], "command": "repl_transfer_current", "args": {"scope": "selection", "action":"view_write"}},
+    { "keys": ["ctrl+shift+super+f"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+    { "keys": ["shift+ctrl+,", "f"], "command": "repl_transfer_current", "args": {"scope": "file", "action":"view_write"}},
+    { "keys": ["ctrl+super+l"], "command": "repl_transfer_current", "args": {"scope": "lines"}},
+    { "keys": ["shift+ctrl+,", "l"], "command": "repl_transfer_current", "args": {"scope": "lines", "action":"view_write"}},
+    { "keys": ["ctrl+super+b"], "command": "repl_transfer_current", "args": {"scope": "block"}},
+    { "keys": ["shift+ctrl+,", "b"], "command": "repl_transfer_current", "args": {"scope": "block", "action":"view_write"}}
+
+]
