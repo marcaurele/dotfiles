@@ -9,6 +9,7 @@ brew 'mas'
 
 brew 'ack'
 brew 'asciidoc'
+brew 'asciinema'
 brew 'binutils'
 brew 'coreutils'
 brew 'curl', args: ['with-openssl', 'with-libssh2']
