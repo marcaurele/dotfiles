@@ -101,7 +101,8 @@ brew 'geoip'
 brew 'gradle'
 brew 'kafkacat'
 brew 'maven'
-#brew 'mysql-connector-c'
+# Required to install python mysqlclient lib
+brew 'mysql-connector-c'
 # Must use MySQL 5.6 for cloudstack 4.4
 brew 'homebrew/version/mysql56'
 brew 'pango'
