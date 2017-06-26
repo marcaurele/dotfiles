@@ -38,8 +38,9 @@ brew 'sqlite', args: ['universal']
 brew 'tree'
 brew 'unrar'
 
-brew 'python'
-brew 'python3'
+#brew 'python'
+#brew 'python3'
+brew 'pyenv'
 #brew 'pyenv-virtualenv'
 #brew 'pyenv-virtualenvwrapper'
 brew 'ruby-build'

@@ -60,7 +60,16 @@ Warning: it won't show which packages have been updated!
 
 ## Manual things
 
+### Python
+
+Use `pyenv` to install different py flavour, most likely 2.7.12, 3.4.5, 3.5.2
+
 ### Asciidoctor
   - `sudo gem install asciidoctor`
   - `sudo gem install --pre asciidoctor-pdf`
   - `sudo gem install coderay pygments.rb`
+
+
+## TODO in readme/conf
+https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b
+
