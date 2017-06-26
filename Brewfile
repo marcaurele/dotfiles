@@ -64,6 +64,7 @@ cask 'libreoffice'
 cask 'java7'
 cask 'java'
 cask 'keybase'
+cask 'keepassxc'
 cask 'pencil'
 cask 'qlmarkdown'
 #cask 'seashore' - discontinued
