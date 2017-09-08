@@ -4,7 +4,8 @@
 [user]
         name = Marc-Aurèle Brothier
         email = m@brothier.org
-	signingkey = 887CC10F998EBC42
+#        signingkey = 887CC10F998EBC42
+        signingkey = 9E5E851AF9FCCFA20FA49965887CC10F998EBC42
 [github]
         user = marcaurele
         name = marcaurele
@@ -22,17 +23,17 @@
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         count   = !git shortlog -sn
-	please = push --force-with-lease
-	commend = commit --amend --no-edit
-	shorty = status --short --branch
-	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+        please = push --force-with-lease
+        commend = commit --amend --no-edit
+        shorty = status --short --branch
+        grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
 [color]
         diff = auto
         status = auto
         branch = auto
         ui = true
 [core]
-	excludesfile = /Users/marco/.gitignore
+        excludesfile = /Users/marco/.gitignore
         editor = vim
 [apply]
         whitespace = nowarn
@@ -47,12 +48,12 @@
         # for more information on different options of the below setting.
         default = current
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
 [diff]
-	compactionHeuristic = true
+        compactionHeuristic = true
 [commit]
-	gpgsign = true
+        gpgsign = true
