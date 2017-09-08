@@ -7,4 +7,4 @@ alias demo_secret='echo $DEMO_SECRET_KEY | pbcopy'
 
 alias dev_update='pip install --upgrade pip && pip install -r requirements-dev.txt && npm install'
 
-alias restart-cassandra='for h in store-store0{01,02,03,04,05,06,07,08,09,10,11,12,13,14,15}.dk2.p.exoscale.net; do echo $h; ssh root@$h /root/toolbox/cassandra-restart.sh; done'
+alias restart-cassandra='for h in `find-exo-hosts store-store|ack -v pp`; do echo $h; ssh root@$h /root/toolbox/cassandra-restart.sh; done'
