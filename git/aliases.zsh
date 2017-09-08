@@ -6,6 +6,14 @@ then
   alias git=$hub_path
 fi
 
+function git_remove_tag() {
+    if [ -n "$1" ]
+    then
+        git tag -d "$1"
+        git push origin :refs/tags/"$1"
+    fi
+}
+
 # The rest of my fun git aliases
 alias g='git'
 alias gl='git pull --prune'
@@ -19,3 +27,4 @@ alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
+alias gitremovetag='git_remove_tag'
