@@ -3,7 +3,5 @@ alias csdev-build='mvn -P kvm,exoscale,developer -Dsimulator -Dmaven.test.skip=t
 alias csdev-buildwithtest='mvn -P kvm,exoscale,systemvm,developer -Dsimulator $1'
 alias csdev-deploydb='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -Pdeveloper -pl developer -Ddeploydb'
 alias csdev-deploysimulator='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -Pdeveloper -pl developer -Ddeploydb-simulator'
-alias csdev-startjetty='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl client jetty:run-exploded -Dsimulator'
-alias csdev-startcs='java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n -Djava.net.preferIPv4Stack=true -jar client/target/cloud-client-ui-*.jar'
-alias csdev-inject-config='cd client/target && cp conf/* ./ && cp log4j-cloud.xml log4j.xml && zip -u cloud-client-ui-*.jar commands.properties db.properties ehcache.xml environment.properties log4j.xml log4j-cloud.xml && cd -'
+alias csdev-start='java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n -Djava.net.preferIPv4Stack=true -Dlog4j.configuration=log4j-cloud.xml -Djetty.port=8080 -cp "client/target/conf:client/target/bcprov-jdk15on-1.55.jar:client/target/cloud-client-ui-4.4.2.9-exoscale-SNAPSHOT.jar" org.apache.cloudstack.ServerDaemon'
 alias csdev-installdc='python tools/marvin/marvin/deployDataCenter.py -i setup/dev/advanced.cfg'
