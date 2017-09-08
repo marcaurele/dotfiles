@@ -16,9 +16,8 @@ brew 'curl', args: ['with-openssl', 'with-libssh2']
 brew 'gdbm', args: ['universal']
 brew 'ghostscript', args: ['with-x11']
 brew 'git'
-#brew 'gpg'
 brew 'gpg2', args: ['with-readline']
-brew 'imagemagick', args: ['with-ghostscript']
+brew 'imagemagick', args: ['with-ghostscript', 'with-fontconfig', 'with-pango', 'with-openjpeg', 'with-librsvg']
 brew 'ipcalc'
 brew 'jenv'
 brew 'jp2a'
@@ -30,6 +29,8 @@ brew 'npm', args: ['with-openssl']
 brew 'readline', args: ['universal']
 brew 'oath-toolkit'
 brew 'p7zip'
+brew 'passw'
+brew 'pigz'
 brew 'pinentry-mac'
 brew 'pngcrush'
 brew 'postgresql', args: ['with-python']
@@ -38,8 +39,6 @@ brew 'sqlite', args: ['universal']
 brew 'tree'
 brew 'unrar'
 
-#brew 'python'
-#brew 'python3'
 brew 'pyenv'
 #brew 'pyenv-virtualenv'
 #brew 'pyenv-virtualenvwrapper'
@@ -66,6 +65,7 @@ cask 'java'
 cask 'keybase'
 cask 'keepassxc'
 cask 'pencil'
+cask 'psequel'
 cask 'qlmarkdown'
 #cask 'seashore' - discontinued
 cask 'sequel-pro'
@@ -112,4 +112,3 @@ brew 'redis'
 brew 'yarn'
 
 cask 'dockertoolbox'
-#cask 'eclipse-jee'
