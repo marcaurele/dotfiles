@@ -7,7 +7,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Delete all .pyc files
 alias cleanpyc='find . -type f -name "*.pyc" -delete'
 
-exo_recreate_pyvenv() {
+exo_recreate_pyvenv_fn() {
 	if [ -e "$PWD/.venv" ]; then
 		if type deactivate > /dev/null; then
 			deactivate
@@ -19,4 +19,4 @@ exo_recreate_pyvenv() {
 	fi
 }
 
-alias exo_recreate_pyvenv="exo_recreate_pyvenv"
+alias exo_recreate_pyvenv="exo_recreate_pyvenv_fn"

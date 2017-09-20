@@ -1,5 +1,5 @@
 
-update_node_modules() {
+update_node_modules_fn() {
 	if [ -d node_modules ]; then
 		sudo rm -dfr node_modules
 		npm install
@@ -8,6 +8,6 @@ update_node_modules() {
 	fi
 }
 
-alias update_node_modules="update_node_modules"
+alias update_node_modules="update_node_modules_fn"
 
 alias grunt="nocorrect grunt"
