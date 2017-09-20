@@ -62,3 +62,5 @@ development_cd() {
 }
 
 alias cd="development_cd"
+
+alias sshpass="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
