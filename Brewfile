@@ -100,7 +100,6 @@ brew 'docker'
 brew 'docker-machine'
 brew 'docker-compose'
 brew 'geoip'
-brew 'gradle'
 brew 'kafkacat'
 brew 'maven'
 # Required to install python mysqlclient lib
