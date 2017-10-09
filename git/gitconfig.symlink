@@ -2,8 +2,8 @@
 #
 
 [user]
-        name = Marc-Aurèle Brothier
-        email = m@brothier.org
+	name = Marc-Aurèle Brothier
+	email = m@brothier.org
 #        signingkey = 887CC10F998EBC42
         signingkey = 9E5E851AF9FCCFA20FA49965887CC10F998EBC42
 [github]
@@ -57,3 +57,8 @@
         compactionHeuristic = true
 [commit]
         gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
