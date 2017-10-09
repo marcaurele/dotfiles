@@ -1,0 +1,17 @@
+# Packages installed on debian laptop
+
+apt update -q
+apt install -y \
+sudo htop iftop git build-essential gnupg mtr wget curl oath-toolkit ipcalc zsh zsh-completions pigz readline qrcode \
+pwgen whois net-tools pssh ack openssl pass geoip \
+docker-machine docker vagrant virtualbox virtualbox-extension-pack virt-manager qemu libvirt \
+python python-pip python3 python3-pip pyenv \
+maven jdk8-openjdk \
+npm kafkacat yarn redis pango \
+firefox-esr chromium rdesktop gimp vlc skype libreoffice calibre freemind telegram xquartz inkscape sublime dropbox \
+i3 i3status i3lock suckless-tools \
+veracrypt 
+
+# Edits
+# locale - https://wiki.debian.org/Locale
+# /etc/locale.gen, and activate fr_CH.UTF-8 UTF-8
