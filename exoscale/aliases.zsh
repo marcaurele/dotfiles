@@ -9,3 +9,6 @@ alias demo_secret='echo $DEMO_SECRET_KEY | pbcopy'
 alias dev_update='pip install --upgrade pip && pip install -r requirements-dev.txt && npm install'
 
 alias restart-cassandra='for h in `find-exo-hosts store-store|ack -v pp`; do echo $h; ssh root@$h /root/toolbox/cassandra-restart.sh; done'
+
+alias csppdb='ssh `find-exo-hosts virt-db-pp|sort|head -1` -L 3308:localhost:3306'
+alias csdb='ssh `find-exo-hosts virt-db|ack -v pp|sort|head -1` -L 3307:localhost:3306'

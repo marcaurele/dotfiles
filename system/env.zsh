@@ -12,11 +12,12 @@ export LC_ALL='en_US.UTF-8'
 # For standard sorting in ls, ...
 export LC_COLLATE=C
 
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
-
 # Don’t clear the screen after quitting a manual page
 #export MANPAGER="less -X"
 
 # Sorry Brew, but that's not something I want
 export HOMEBREW_NO_ANALYTICS=1
+
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    export GREP_OPTIONS="--color=auto"
+fi

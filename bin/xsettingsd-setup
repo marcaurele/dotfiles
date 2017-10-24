@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#dpi=192
+#dpi=144
+dpi=96
+
+# Build xsettingsd file
+echo Xft/DPI $(( $dpi * 1024 )) > ~/.config/xsettingsd
+
+# Signal xsettingsd
+pid=$(xprop -name xsettingsd _NET_WM_PID 2> /dev/null | awk '{print $NF}')
+if [ x"$pid" = x ]; then
+    xsettingsd -c ~/.config/xsettingsd &
+else
+    kill -HUP $pid
+fi
+
+# Also use xrdb for very old stuff (you know, LibreOffice)
+echo Xft.dpi: $dpi | xrdb -merge
+
+# Natural scrolling on touchpad
+#xinput set-prop 12 287 1
+# Speed up touchpad
+#xinput set-prop 12 291 1
+
+# For USB Mouse
+#xinput set-prop 14 287 1
+#xinput set-prop 14 291 1
