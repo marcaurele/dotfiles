@@ -1,0 +1,5 @@
+{
+    // Turn off
+    "pydocstyle": false,
+    "python_interpreter": "/home/marco/.pyenv/shims/python3"
+}

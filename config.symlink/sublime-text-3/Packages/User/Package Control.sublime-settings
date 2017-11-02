@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Asciidoctor",
+		"BracketHighlighter",
+		"HTMLBeautify",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"Pretty JSON",
+		"Python Flake8 Lint",
+		"SqlBeautifier"
+	]
+}
