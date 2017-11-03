@@ -18,7 +18,6 @@ config.symlink/inkscape
 config.symlink/menus
 config.symlink/nautilus
 config.symlink/pulse
-config.symlink/remmina
 config.symlink/sublime-text-3/Backup
 config.symlink/sublime-text-3/Cache
 config.symlink/sublime-text-3/Index
