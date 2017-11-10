@@ -17,11 +17,13 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "load"
+order += "cpu_temperature 0"
 order += "tztime local"
+order += "volume master"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+        format_up = "📡: (%quality at %essid) %ip"
+        format_down = "📡: down"
 }
 
 ethernet _first_ {
@@ -32,6 +34,11 @@ ethernet _first_ {
 
 battery all {
         format = "%status %percentage %remaining"
+	format_down = "No battery"
+	status_chr = "⚡"
+	status_bat = "🔋"
+	status_unk = "?"
+	status_full = "🔋"
 }
 
 tztime local {
@@ -39,9 +46,21 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = "⚒ %1min"
+}
+
+cpu_temperature 0 {
+	format = "🌡%degrees °C"
 }
 
 disk "/" {
-        format = "%avail"
+        format = "💾 %avail"
+}
+
+volume master {
+	format = "♪ %volume"
+	format_muted = "♪ muted"
+	device = "pulse"
+#	mixer = "Master"
+#	mixer_idx = 0
 }
