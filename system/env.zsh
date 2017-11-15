@@ -21,3 +21,5 @@ export HOMEBREW_NO_ANALYTICS=1
 if [[ "$(uname -s)" == "Darwin" ]]; then
     export GREP_OPTIONS="--color=auto"
 fi
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
