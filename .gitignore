@@ -30,3 +30,4 @@ config.symlink/xsettingsd
 config.symlink/QtProject.conf
 config.symlink/Trolltech.conf
 config.symlink/pavucontrol.ini
+config.symlink/vlc/vlc-qt-interface.conf
