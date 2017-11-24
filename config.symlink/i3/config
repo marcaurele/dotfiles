@@ -159,9 +159,15 @@ bar {
 
 # Shortcuts
 
-# Lock
+## Sound - pavucontrol
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ false && pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ false && pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+## Lock
 bindsym $mod+x exec i3lock -c 000000
-# Lock & suspend
+### Lock & suspend
 bindsym $mod+Shift+x exec i3lock -c 000000 && systemctl suspend
 
 # Switch capslock to ctrl key - done in /etc/X11/xorg.conf.d/20-keyboard.conf
