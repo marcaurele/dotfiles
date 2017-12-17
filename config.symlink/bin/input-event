@@ -21,7 +21,7 @@ case "$use,$(uname -n),$name" in
     XISlaveKeyboard,liskam,"Topre Corporation Realforce 87")
         # Are we getting docked?
         sleep 2
-        dock
+        $HOME/.dotfiles/bin/dock
 #        xkb default
         ;;
     XISlaveKeyboard,*)
