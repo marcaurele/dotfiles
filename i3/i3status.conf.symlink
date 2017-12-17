@@ -38,7 +38,7 @@ battery all {
 	status_chr = "⚡"
 	status_bat = "🔋"
 	status_unk = "?"
-	status_full = "🔋"
+	status_full = "BAT"
 }
 
 tztime local {
