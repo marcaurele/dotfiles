@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Event handler for inputplug
+
+event="$1"
+device="$2"
+use="$3"
+name="$4"
+
+[ x"$event" = x"XIDeviceEnabled" ] || exit 0
+
+# Load the given keymap
+#xkb() {
+#    xkbcomp -i ${device} -w 0 -I$HOME/.config/awesome/xkb \
+#        $HOME/.config/awesome/xkb/$1.xkb ${DISPLAY}
+#}
+
+printf "input-event: $use: [%3d] $name\n" $device
+
+case "$use,$(uname -n),$name" in
+    XISlaveKeyboard,liskam,"Topre Corporation Realforce 87")
+        # Are we getting docked?
+        sleep 2
+        dock
+#        xkb default
+        ;;
+    XISlaveKeyboard,*)
+#        xkb default
+        ;;
+    XISlavePointer,*,"Logitech USB-PS/2 Optical Mouse")
+        xinput set-prop $device "libinput Natural Scrolling Enabled" 1
+        xinput set-prop $device "libinput Accel Speed" 1
+        ;;
+#    XISlavePointer,liskam,"ELAN Touchscreen")
+#        xinput disable $device
+#        ;;
+esac

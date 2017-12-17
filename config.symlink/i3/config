@@ -183,7 +183,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 
 # Run xsettings to configure DPI
-exec --no-startup-id ~/.dotfiles/bin/xsettingsd-setup
+exec --no-startup-id ~/.config/bin/xsettingsd-setup
+exec --no-startup-id inputplug -0 -c ~/.config/bin/input-event 2> /dev/null
 
 # Telegram
 exec ~/soft/Telegram/Telegram -startintray
