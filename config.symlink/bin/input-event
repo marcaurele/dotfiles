@@ -27,7 +27,8 @@ case "$use,$(uname -n),$name" in
     XISlaveKeyboard,*)
 #        xkb default
         ;;
-    XISlavePointer,*,"Logitech USB-PS/2 Optical Mouse")
+    XISlavePointer,*,*)
+#    XISlavePointer,*,"Logitech USB-PS/2 Optical Mouse")
         xinput set-prop $device "libinput Natural Scrolling Enabled" 1
         xinput set-prop $device "libinput Accel Speed" 1
         ;;
