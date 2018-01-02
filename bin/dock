@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
 xrandr --output DP-1 --auto --output eDP-1 --left-of DP-1 --output eDP-1 --mode 1920x1080
-xinput set-prop "ThinkPad USB Travel Mouse" "libinput Natural Scrolling Enabled" 1
-xinput set-prop "ThinkPad USB Travel Mouse" "libinput Accel Speed" 1
