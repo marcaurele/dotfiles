@@ -1,0 +1,28 @@
+# -*- conf -*-
+
+# Default configuration with:
+#  - compose → rwin or menu
+#  - capslock as ctrl
+#  - us+ch(fr) and switch with rctrl+rshift
+#  - pause key becomes xscreensaver
+# /usr/share/x11/xkb/...
+# setxkbmap 'ch(fr),us' -option grp:alts_toggle -option ctrl:nocaps -model pc105 -option compose:rwin -option compose:menu -print
+#xkb_keymap {
+#        xkb_keycodes  { include "evdev+aliases(qwerty)" };
+#        xkb_types     { include "complete" };
+#        xkb_compat    { include "complete" };
+#        xkb_symbols   { include "pc+us+ch(fr):2+inet(evdev)"
+#                        include "compose(rwin)+compose(menu)"
+#                        include "ctrl(nocaps)"
+#                        include "group(rctrl_rshift_toggle)"
+#	};
+#        xkb_geometry  { include "pc(pc105)" };
+#};
+
+xkb_keymap {
+    xkb_keycodes  { include "evdev+aliases(qwerty)" };
+    xkb_types     { include "complete"  };
+    xkb_compat    { include "complete"  };
+    xkb_symbols   { include "pc+ch(fr)+us:2+inet(evdev)+group(rctrl_rshift_toggle)+ctrl(nocaps)"    };
+    xkb_geometry  { include "pc(pc105)" };
+};
