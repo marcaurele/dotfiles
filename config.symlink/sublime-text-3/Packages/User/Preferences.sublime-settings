@@ -1,7 +1,9 @@
 {
+	"WrapPlus.break_long_words": false,
+	"WrapPlus.break_on_hyphens": false,
+	"WrapPlus.wrap_width": 70,
 	"color_scheme": "Packages/User/Monokai (Flake8Lint).tmTheme",
 	"draw_white_space": "all",
-	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
 	[
