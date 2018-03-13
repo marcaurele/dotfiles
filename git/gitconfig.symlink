@@ -24,7 +24,7 @@
         wtf     = !$ZSH/bin/git-wtf
         count   = !git shortlog -sn
         please = push --force-with-lease
-        commend = commit --amend --no-edit --date="$(date -R)"
+        commend = commit --amend --no-edit --date=now
         shorty = status --short --branch
         ls = log --graph --pretty=format:\"%C(auto)%h%<(3)%d %s %C(bold blue)(%cr, %an)%Creset%n\" --abbrev-commit --all --find-copies -M --stat
         floge = log --graph --abbrev-commit --decorate --date=relative --all
