@@ -1,33 +1,15 @@
 *.log
-config.symlink/VirtualBox
-config.symlink/autostart
-config.symlink/calibre
-config.symlink/chromium
-config.symlink/configstore
-config.symlink/corebird
-config.symlink/dconf
-config.symlink/enchant
-config.symlink/eog
-config.symlink/evince
-config.symlink/evolution
-config.symlink/gnome-session
-config.symlink/goa-1.0
-config.symlink/gtk*
-config.symlink/htop
-config.symlink/inkscape
-config.symlink/menus
-config.symlink/nautilus
-config.symlink/pulse
-config.symlink/sublime-text-3/Backup
-config.symlink/sublime-text-3/Cache
-config.symlink/sublime-text-3/Index
-config.symlink/sublime-text-3/Installed Packages
-config.symlink/sublime-text-3/Lib
-config.symlink/sublime-text-3/Local
-config.symlink/tilda
-config.symlink/xfce4/terminal/accels.scm
-config.symlink/xsettingsd
-config.symlink/QtProject.conf
-config.symlink/Trolltech.conf
-config.symlink/pavucontrol.ini
-config.symlink/vlc/vlc-qt-interface.conf
+default.xkm
+
+# Blacklist everything by default in config.symlink
+config.symlink/*
+# Whitelist some config.symlink content
+!config.symlink/bin
+!config.symlink/gandi
+!config.symlink/i3
+!config.symlink/remmina
+!config.symlink/systemd
+!config.symlink/vlc
+!config.symlink/xfce4
+!config.symlink/user-dirs.dirs
+!config.symlink/user-dirs.locale
