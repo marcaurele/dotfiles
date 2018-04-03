@@ -12,4 +12,5 @@ alias restart-cassandra='for h in `find-exo-hosts store-store|ack -v pp`; do ech
 
 alias csppdb='ssh `find-exo-hosts virt-db-pp|sort|head -1` -L 3308:localhost:3306'
 alias csdb='ssh `find-exo-hosts virt-db|ack -v pp|sort|head -1` -L 3307:localhost:3306'
-alias searchbyip='~/exoscale/toolbox/.venv/bin/toolbox cloudstack --region=prod:admin vm-by-ip '
+alias vmbyip='~/exoscale/toolbox/.venv/bin/toolbox cloudstack --region=prod:admin vm-by-ip '
+alias vmbyid='~/exoscale/toolbox/.venv/bin/toolbox cloudstack --region=prod:admin vm-by-id '
