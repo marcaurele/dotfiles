@@ -12,6 +12,13 @@ then
   source ~/.localrc
 fi
 
+# Create $HOME/.zsh if missing
+if [[ ! -a ~/.zsh ]]
+then
+  echo "creating .zsh"
+  mkdir ~/.zsh
+fi
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
@@ -41,8 +48,8 @@ done
 unset config_files
 
 # Activate zsh-completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
+#fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(${HOME}/.zsh $fpath)
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
