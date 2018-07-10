@@ -8,4 +8,5 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     then
         source $completion
     fi
+    unset completion
 fi
