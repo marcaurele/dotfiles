@@ -4,7 +4,6 @@
 [user]
 	name = Marc-Aurèle Brothier
 	email = m@brothier.org
-#        signingkey = 887CC10F998EBC42
         signingkey = 9E5E851AF9FCCFA20FA49965887CC10F998EBC42
 [github]
         user = marcaurele
@@ -37,7 +36,7 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = /Users/marco/.gitignore
+	excludesfile = /home/marco/.gitignore_global
         editor = vim
 [apply]
         whitespace = nowarn
@@ -51,12 +50,6 @@
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
         default = current
-[difftool "sourcetree"]
-        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-        path = 
-[mergetool "sourcetree"]
-        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-        trustExitCode = true
 [diff]
         compactionHeuristic = true
 [commit]
