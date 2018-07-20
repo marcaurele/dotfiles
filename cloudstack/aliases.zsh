@@ -1,3 +1,4 @@
+# Exoscale aliases
 alias csdev-go='cd $HOME/exoscale/cloudstack'
 alias csdev-build='mvn -P kvm,exoscale,developer -Dsimulator -Dmaven.test.skip=true $1'
 alias csdev-buildwithtest='mvn -P kvm,exoscale,systemvm,developer -Dsimulator $1'
@@ -7,3 +8,13 @@ alias csdev-start='java -Dcom.sun.management.jmxremote=true -Dcom.sun.management
 alias csdev-installdc='python tools/marvin/marvin/deployDataCenter.py -i setup/dev/advanced.cfg'
 
 alias csdev-dump='mysqldump --complete-insert --skip-lock-tables --extended-insert=FALSE --ignore-table=cloud.usage_event --ignore-table=cloud.event'
+
+# Apache CloudStack aliases
+alias acsdev-go='cd $HOME/code/cloudstack-public'
+alias acsdev-build='mvn -P developer,systemvm -Dsimulator -Dnoredist'
+alias acsdev-findbugs='mvn -P enablefindbugs cobertura:cobertura'
+alias acsdev-deploydb='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -P developer -pl developer -Ddeploydb'
+alias acsdev-deploysimulator='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -P developer -pl developer -Ddeploydb-simulator'
+alias acsdev-start='MAVEN_OPTS=$MAVEN_OPTS_DEBUG mvn -pl :cloud-client-ui -Dsimulator jetty:run'
+alias acsdev-deploydc='python tools/marvin/marvin/deployDataCenter.py -i setup/dev/advanced.cfg'
+alias acsdev-testsimulator='nosetests --with-marvin --marvin-config=setup/dev/advanced.cfg -a tags=advanced,required_hardware=false --hypervisor=simulator test/integration/smoke'
