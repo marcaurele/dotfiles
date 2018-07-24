@@ -20,6 +20,5 @@
 		79
 	],
 	"show_encoding": true,
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"theme": "Adaptive.sublime-theme"
 }

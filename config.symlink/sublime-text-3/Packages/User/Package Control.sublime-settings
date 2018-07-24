@@ -7,6 +7,7 @@
 	[
 		"Asciidoctor",
 		"BracketHighlighter",
+		"GoSublime",
 		"HTMLBeautify",
 		"OmniMarkupPreviewer",
 		"Package Control",
