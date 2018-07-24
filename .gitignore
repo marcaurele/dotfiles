@@ -7,7 +7,7 @@ config.symlink/*
 !config.symlink/bin
 !config.symlink/gandi
 !config.symlink/i3
-!config.symlink/remmina
+#!config.symlink/remmina
 !config.symlink/systemd
 !config.symlink/vlc
 !config.symlink/xfce4
