@@ -9,5 +9,6 @@
 *.pyc
 *.class
 .venv/
+.eggs/
 
 node_modules/
