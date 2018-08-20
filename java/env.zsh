@@ -1,6 +1,6 @@
 # Only for OSX
 if [[ "$(uname -s)" == "Darwin" ]]; then
-    echo oooo
+    echo "Hmmm working on OSX"
     eval "$(jenv init -)"
 fi
 
