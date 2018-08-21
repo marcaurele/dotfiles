@@ -22,5 +22,5 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     export GREP_OPTIONS="--color=auto"
 fi
 
-#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+#export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
