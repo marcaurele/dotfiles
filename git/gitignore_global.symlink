@@ -1,9 +1,13 @@
+# System
 .DS_Store
 .DS_Store?
 *~
 *.swp
 *._*
 .Trashes
+
+# IDE
+.idea/
 
 # Compiled files
 *.pyc
