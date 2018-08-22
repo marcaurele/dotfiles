@@ -36,7 +36,7 @@
         branch = auto
         ui = true
 [core]
-	excludesfile = /home/marco/.gitignore_global
+	excludesfile = ~/.gitignore_global
         editor = vim
 [apply]
         whitespace = nowarn
