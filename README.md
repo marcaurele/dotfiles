@@ -1,3 +1,5 @@
+*This repository won't get much updated anymore, it has been superseded by an [Ansible version](https://github.com/marcaurele/laptop-ansible).*
+
 # dotfiles
 
 Fork from holman dotfiles (https://github.com/holman/dotfiles).
